@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite1">
+
+    <parameter name="page" value="https://mail.yandex.com"/>
+    <parameter name="validEmailAddress" value=""/>
+    <parameter name="validEmailAddressTo" value=""/>
+    <parameter name="validPassword" value=""/>
+    <parameter name="invalidEmailAddress" value="qwerty"/>
+    <parameter name="invalidPassword" value="123456"/>
+    <parameter name="emailSubject" value="TestSubject"/>
+    <parameter name="emailBody" value="testBody"/>
+
+    <test name="Yandex smoke test">
+        <classes>
+            <!--<class name="LoginTest"/>-->
+            <class name="CreateMessageTest"/>
+        </classes>
+    </test>
+</suite>
